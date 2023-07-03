@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  margin: auto;
+  width: 375px;
+  height: 672px;
+  background: rgb(12, 0, 255);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+
+  .scores {
+    padding: 6px 5px 5px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nick_name {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 3px;
+  }
+
+  .close_button {
+    background-color: #fff;
+    align-items: center;
+    border-radius: 50%;
+
+    img {
+      padding: 2px 3px;
+    }
+  }
+}
+
+.progress {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.question {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.variants {
+  padding-bottom: 60px;
+  text-align: center;
+
+  .variant {
+    display: flex;
+    flex-direction: column;
+
+    .option-btn {
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px 20px;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0px 2px 12px 2px rgb(255, 255, 255);
+        transform: translateY(1px);
+        transition-duration: 300ms;
+        }
+
+      &:active {
+        transform: translateZ(2px);
+      }
+    }
+
+    .cheked {
+        background-color: greenyellow;
+    }
+  }
+  #continue-button {
+    background: greenyellow;
+    border: none;
+    font-size: 18px;
+    font-family: General Sans;
+    color: black;
+    padding: 20px 120px;
+    border-radius: 10px;
+    margin-top: 50px;
+
+    &:hover {
+        box-shadow: 0px 2px 12px 2px rgb(255, 255, 255);
+    }
+
+    &:active {
+        background-color: rgb(3, 176, 3);
+    }
+  }
+}
