@@ -1,26 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Quiz } from "./components/Quiz";
 
 function App() {
+  const scoreRef = useRef(0);
+
   return (
     <div className="wrapper">
       <header>
-        <div className="scores">
-          <img src="./image/scores.png" />
+        <div>
+          <img src="./image/score.png" alt="Scores" />
         </div>
         <div className="nick_name">
           <b>Fantasy Quiz #156</b>
         </div>
-        <div className="close_button">
-          <img src="./image/out.png" />
+        <div>
+          <img src="./image/outt.png" alt="Close" />
         </div>
       </header>
-      <section className="progress">
-        <div className="indication">
-          <img src="./image/progress.png" />
-        </div>
-      </section>
-      <Quiz />
+      <Quiz score={scoreRef} />
     </div>
   );
 }

@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 40px 20px;
+  text-align: center;
 
   .scores {
     padding: 6px 5px 5px;
@@ -39,11 +40,6 @@ header {
       padding: 2px 3px;
     }
   }
-}
-
-.progress {
-  text-align: center;
-  padding-bottom: 40px;
 }
 
 .question {
@@ -73,15 +69,15 @@ header {
         box-shadow: 0px 2px 12px 2px rgb(255, 255, 255);
         transform: translateY(1px);
         transition-duration: 300ms;
-        }
+      }
 
       &:active {
         transform: translateZ(2px);
       }
     }
 
-    .cheked {
-        background-color: greenyellow;
+    .checked {
+      background-color: greenyellow;
     }
   }
   #continue-button {
@@ -95,11 +91,35 @@ header {
     margin-top: 50px;
 
     &:hover {
-        box-shadow: 0px 2px 12px 2px rgb(255, 255, 255);
+      box-shadow: 0px 2px 12px 2px rgb(255, 255, 255);
     }
 
     &:active {
-        background-color: rgb(3, 176, 3);
+      background-color: rgb(3, 176, 3);
+    }
+  }
+}
+
+.score_block {
+  align-items: center;
+  margin-top: 30%;
+  font-size: 28px;
+  color: #fff;
+
+  .show_score {
+    padding-bottom: 100px;
+    line-height: 42px;
+  }
+
+  button {
+    font-size: 18px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 10px;
+
+    a {
+      text-decoration: none;
     }
   }
 }
